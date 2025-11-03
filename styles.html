@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        h1{
+            background-color:aqua ;
+          }
+    </style>
+</head>
+<body>
+    <h1 style="color: palevioletred;">CASCADING STYLE SHEETS</h1>
+    <b style="color: brown;">RWD--Responsive Web Design</b>
+    <p style="color: turquoise;">We can create Responsive Web Design using CSS</p>
+    <p style="color: violet;">Hakon Wium lie -- The creator of CSS with the help of Bert Bos</p> 
+    <b style="color: deepskyblue ;">CSS-1991   <br>  CSS1-1996</b><br>
+
+    <b style="color: crimson;">Styling</b><br>
+    <b style="color: darkmagenta;">Cascding</b>  -- Flow of Styles<br>
+    <b style="color: darkred;">Style</b>  -- Giving Style to perticular webpage<br>
+    <b style="color: blue;">Sheets</b> -- Webpages<br>
+
+    <b style="color: indigo;">There are 3 ways to insert CSS into HTML. They are</b>
+    <li style="color: deeppink;">Inline styling</li>
+    <li style="color: aqua;">Internal Styling</li>
+    <li style="color: chartreuse;">External Styling</li>
+
+    <p style="color: red;">A selector in CSS is a pattern used to target and select specific HTML elements so that styles can be applied to them.
+        In CSS, selectors are generally grouped into five main categories, and within them, there are many types.
+        Here's the breakdown:
+
+        <b><ol style="color: blueviolet;">Simple Selectors</b>
+            <p>Target elements based on name, class, or ID.</p>
+           <li>Element Selector → p { } --- targets all  p tag elements</li>
+           <li>Class Selector → .classname{ } ---  targets elements with that class</li>
+           <li>ID Selector → #idName { } ---  targets a single element with that ID</li>
+           <li>Universal Selector → * { } --- targets all elements</li>
+           <li>Grouping Selector → h1, h2, p { } --- targets multiple selectors together</li>
+        </ol>
+        <ol style="color: darkgreen;"><b>Combinator selector</b>
+        <p>Select elements based on their relationship with other elements.</p>
+            <li>Descendant Selector → div p { } --- targets p tag inside div tag</li>
+            <li>Child Selector → div > p { } --- targets direct p tag children of div tag</li>
+            <li>Adjacent Sibling Selector → h1 + p { } --- targets first p tag after heading tag h1</li>
+            <li>General Sibling Selector → h1 ~ p { } --- targets all p tag after h1 tag at the same level</li>
+        </ol>    
+         <ol style="color: firebrick;"><b>Pseudo-classe</b>
+        <p>Select elements based on a special state.</p>
+           <li>a:hover → when mouse hovers over a link</li>
+           <li>input:focus → when input is active</li>
+           <li>li:first-child → first list item</li>
+           <li>li:last-child → last list item</li>
+           <li>:nth-child(2) → second child element</li>
+        </ol>
+        <ol style="color: mediumblue;"><b>Pseudo-elements</b>
+            <li>select and style part of an element.</li>
+            <li>p::first-line → first line of a paragraph</li>
+            <li>p::first-letter → first letter of a paragraph</li>
+            <li>::before → insert content before an element</li>
+            <li>::after → insert content after an element</li>
+        </ol>
+        <ol style="color: purple;"><b>Attribute Selectors</b>
+           <p>Select elements based on attributes and values.</p>
+           <li>[type] → targets elements with type attribute</li>
+           <li>[type="text"] → targets elements with type="text"</li>
+           <li>[title~="flower"] → attribute contains the word “flower”</li>
+           <li>[lang|="en"] → attribute starts with “en”</li>
+        </ol>
+     </p>
+</body>
+</html>

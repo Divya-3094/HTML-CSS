@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-Blog</title>
+    <style>
+        .parent1{
+            width: 100%;
+            margin: 5%;
+        }
+        .child1{
+            display: inline-block;
+            width: 20%;
+            margin-left: 2%;
+        }
+        .child1 img{
+            width: 100%;
+        }
+        .parent2{
+            width: 100%;
+            margin: 5%;
+        }
+        .child2{
+            display: inline-block;
+            width: 20%;
+            margin-left: 2%;
+        }
+        .child2 img{
+            width: 100%;
+        }
+       .box>p{
+        display: inline-block;
+        padding: 3%;
+       }
+       .box{
+        margin-left: 30%;
+       }
+       .box1{
+        margin: 10%;
+       }
+       .box1 img{
+        width: 50%;
+       }
+       .parent3>{
+        width: 100%;
+        margin-left: 5%;
+       }
+       .parent3>.part1,.part2,.part3{
+        display: inline-block;
+        width: 20%;
+        margin-left: 3%;
+       }
+       .parent3>.part1{
+        display: inline-block;
+        margin-left: 15%;
+       }
+       .parent3>.part2>.child3>p{
+        display: inline-block;
+        margin-left: 25px;
+
+       }
+       .parent3>.part3>p{
+        display: inline-block;
+        padding: 5px;
+        margin: 5px;
+       }
+       .child3 img{
+        width: 30%;
+       }
+
+
+
+    @media screen and (min-width:320px) and (max-width:425px){
+       .parent1{
+            width: 100%;
+            margin: 5%;
+        }
+        .child1{
+            display: block;
+            width: 20%;
+            margin-left: 2%;
+        }
+        .child1 img{
+            width: 42vh;
+            height: 60vh;
+        }
+        .parent2{
+            width: 100%;
+            margin: 5%;
+        }
+        .child2{
+            display: block;
+            width: 20%;
+            margin-left: 2%;
+        }
+        .child2 img{
+            width: 42vh;
+            height: 60vh;
+        }
+       .box>p{
+        display: block;
+        padding: 3%;
+        width: 100%;
+       }
+       .box{
+        margin-left: 30%;
+       }
+       .box1{
+        margin: 10%;
+       }
+       .box1 img{
+        width: 42vh;
+        height: 60vh;
+       }
+       .parent3>{
+        width: 100%;
+        margin-left: 5%;
+       }
+       .parent3>.part1,.part2,.part3{
+        width: 100%;
+        display: block;
+        width: 20%;
+        margin-left: 3%;
+       }
+       .parent3>.part1{
+        width: 100%;
+        display: block;
+        margin-left: 15%;
+       }
+       .parent3>.part2>.child3>p{
+        width: 100%;
+        display: block;
+        margin-left: 25px;
+
+       }
+       .parent3>.part3>p{
+        width: 100%;
+        display: block;
+        padding: 5px;
+        margin: 5px;
+       }
+       .child3 img{
+        width: 30%;
+       }  
+       }
+
+
+       </style>
+</head>
+<body>
+    <center><h1>MY FOOD</h1></center>
+    <div class="parent1">
+        <div class="child1">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child1">
+            <img src="https://www.w3schools.com/w3images/steak.jpg" alt="">
+            <h3>Let Me Tell You About This Steak</h3>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child1">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="">
+            <h3>Cherries, interrupted</h3>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child1">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="">
+            <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> 
+        </div>
+    </div>
+    <div class="parent2">
+        <div class="child2">
+            <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="">
+            <h3>All I Need Is a Popsicle</h3>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum</p>
+        </div>
+        <div class="child2">
+            <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="">
+            <h3>Salmon For Your Skin</h3>
+            <p>Once again, some random text to lorem lorem lorem</p>
+        </div>
+        <div class="child2">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <h3>The Perfect Sandwich, A Real Classic</h3>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="child2">
+            <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="">
+            <h3>Le French</h3>
+            <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </div>
+    <div class="box">
+        <p>&lt&lt</p>
+        <p style="background-color: black; color: white;">1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>&gt&gt</p>
+    </div>
+   
+    <div class="box1">
+        <center>
+        <h2>About Me, The Food Man</h2>
+        <img src="https://www.w3schools.com/w3images/chef.jpg" alt="">
+        <h3>I am Who I Am!</h3>
+        <i>With Passion For Real, Good Food</i>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and 
+            an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed
+            vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </center>
+    </div>
+    <div class="parent3">
+        <div class="part1">
+            <h3>FOOTER</h3>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+                ultricies congue gravida diam non fringilla.</p>
+            <p>Powered by w3.css</p>
+        </div>
+         <div class="part2">
+            <div class="child3">
+            <h3>BLOG POSTS</h3>
+            <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="">
+            <p>Lorem</p>
+            <p>Sed mattis nunc</p>
+            </div>
+            <div class="child3">
+            <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="">
+            <p>Ipsum</p>
+            <p>Praes tinci sed</p>
+            </div>
+         </div>
+          <div class="part3">
+            <h3>POPULAR TAGS</h3>
+            <p style="background-color: black; color: white;">Travel</p>
+            <p style="background-color:darkgray;">New York</p>
+            <p style="background-color:darkgray;">Dinner</p>
+            <p style="background-color:darkgray;">Salmon</p>
+            <p style="background-color:darkgray;">France</p>
+            <p style="background-color:darkgray;">Drinks</p>
+            <p style="background-color:darkgray;">Ideas</p>
+            <p style="background-color:darkgray;">Flavors</p>
+            <p style="background-color:darkgray;">Cuisine</p>
+            <p style="background-color:darkgray;">Chicken</p>
+            <p style="background-color:darkgray;">Dressing</p>
+            <p style="background-color:darkgray;">Fried</p>
+            <p style="background-color:darkgray;">Fish</p>
+            <p style="background-color:darkgray;">Duck</p>
+          </div>
+    </div>
+</body>
+</html>

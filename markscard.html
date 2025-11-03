@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marks Card</title>
+    <style>
+       body {
+         font-family: 'Arial', sans-serif;
+         background: #fff;
+         margin-top: 0;
+         top: 0;
+       }
+       .markscard{
+         width: 800px;
+         border: 8px solid #d19ddb;
+         background-image: linear-gradient(to right, rgb(246, 234, 170), violet, rgb(171, 228, 251));
+         border-radius: 12px;
+         font-family: 'Times New Roman', serif;
+         position: relative;
+         margin: auto;
+       }
+       .container1{
+        margin-top: -3%;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to right, rgb(246, 234, 170), violet, rgb(171, 228, 251));
+        text-align: center;
+        letter-spacing: 1px;
+        border-bottom: 2px solid #5b1136; 
+       }
+       .header{
+        font-size: large;
+        color: #5b1136;
+        font-weight: bold;
+       }
+       .header>h1{
+        color: #5b1136;
+        font-weight: bold;
+       }
+       .header h3{
+        color: #5b1136;
+        font-weight: bold;
+        margin-top: -2%;
+       }
+       .header h4{
+        color: #5b1136;
+        font-weight: bold;
+        margin-right: 80%;
+        margin-top: 2%;
+       }
+       .logo{
+        display: flex;
+        margin-top: -3%;
+        margin-left: 3%;  
+       }
+       .logo>img{
+        width: 10%;  
+       }
+       .a{
+        width: 100%;
+        height: 100%;
+       }
+       .a>h2{
+        color: orangered;
+        margin-bottom: 0;
+       }
+       .a b{
+        margin-top: 0;
+       }
+       .container2{
+        height: 100%;
+        padding-left: 3%; 
+       
+        
+       }
+       .info{
+        padding-top: 1%;
+        margin-left: -3%;
+        background-color: rgb(175, 252, 175);
+       }
+       .info strong{
+        color: #5b1136;
+        padding-left: 5%;  
+       }
+        .date>table {
+        border-collapse: collapse;
+        width: 100%    
+       }
+       .date tr, td{
+         border: 1px solid #999;
+         padding: 6px 10px;
+         text-align: center;     
+       }
+      .date  td {
+       font-weight: 600;
+    }
+      .marks {
+        width: 95%;
+        padding: 5px;
+        background-image: linear-gradient(to right, rgb(246, 234, 170), violet, rgb(171, 228, 251));
+     }
+       .marks>b{  
+        color: #5b1136; 
+        font-size: 15px;
+      }
+      table {
+        border-collapse: collapse;
+        font-size: 15px;
+     }
+
+      th, td {
+        border: 1px solid #999;
+        padding: 8px 10px;
+        text-align: center;
+        background-color: rgb(194, 254, 194);
+      }
+
+       th {
+         background: rgb(127, 248, 127);
+         font-weight: bold;
+         color: #5b1136;
+        }
+
+        td.subject {
+          text-align: left;
+          font-weight: 600;
+          color: #5b1136;
+          background-color: rgb(194, 254, 194);
+        }
+         .b{
+            margin-left: 3%;
+            background-image: linear-gradient(to right, rgb(246, 234, 170), violet, rgb(171, 228, 251));
+        }
+        .b>strong{
+            color: #5b1136;
+        }
+        .marks-section {
+           width: 92%;
+           margin: auto;
+           padding: 10px;
+        }
+        table {
+         border-collapse: collapse;
+         width: 100%;
+        font-size: 15px;
+      }
+
+        th, td {
+           border: 1px solid #999;
+           padding: 8px 10px;
+          text-align: center;
+        }
+
+        th {
+         font-weight: bold;
+        }
+
+       td.subject {
+         text-align: left;
+         font-weight: 600;
+       }
+        .identification {
+           display: flex;
+           border: 1px solid #999;
+           width: 89%;
+           margin-left: 4%;
+           background-color: rgb(194, 254, 194);
+           padding: 10px;
+           font-size: 15px;
+           line-height: 1.6;
+        }
+
+        .identification b {
+          
+          font-size: large;
+          font-weight: bold;
+          color: #5b1136;
+         }
+         .id{
+            margin-left: 4%;
+         }
+         .id span{
+            background-color: rgb(194, 254, 194);
+         }
+         .signs{
+            display: flex;
+            font-weight: bold;
+            color: #b41866;
+            margin-top: 3%;
+            border-bottom: 2px solid ;
+         }
+         .sign1{
+            font-size: small;
+            width: 35%;
+            margin-left: 3%;
+         }
+         .sign1>p{
+            text-align: center;
+         }
+         .qr{
+            margin-left: 15%;
+         }
+         .qr>img{
+           width: 40%;
+         }
+         .sign2{
+            width: 30%;
+            text-align:center;
+            margin-right: 5%;
+            margin-top: 3%;
+         }
+         .sign2>strong{
+            font-size: small;
+         }
+        .last{
+            display: flex;
+            margin-left: 4%;
+        }
+        .footer{
+            width: 70%;
+            border-right: 2px solid;
+        }
+        .footer>p{
+           font-size: small;
+        }
+        .last img{
+            margin-left: 5%;
+            width: 30%;
+            height: 70px;
+        }
+
+
+        /* Tablet devices (768px to 1024px) */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .markscard {
+        width: 90%;
+        padding: 10px;
+    }
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo>img {
+        width: 20%;
+        margin: 10px 0;
+    }
+    .header h4 {
+        margin-right: 0;
+        text-align: center;
+    }
+    .signs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign1, .sign2, .qr {
+        margin: 10px 0;
+        width: 80%;
+    }
+    .last {
+        flex-direction: column;
+        align-items: center;
+    }
+    .last img {
+        margin-left: 0;
+        width: 50%;
+        height: auto;
+    }
+}
+/*  
+Mobile devices (up to 767px)
+@media only screen and (max-width: 767px) {
+    .markscard {
+        width: 95%;
+        padding: 5px;
+        font-size: 14px;
+    }
+    .header h1 {
+        font-size: 1.2rem;
+    }
+    .header h3 {
+        font-size: 1rem;
+    }
+    .header h4 {
+        margin-right: 0;
+        margin-top: 0;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo>img {
+        width: 30%;
+        margin: 5px 0;
+    }
+    .a h2 {
+        font-size: 1rem;
+    }
+    .marks, .marks-section {
+        width: 100%;
+        padding: 5px;
+        overflow-x: auto;
+    }
+    table, th, td {
+        font-size: 12px;
+    }
+    .identification {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+    .signs {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .sign1, .sign2, .qr {
+        width: 90%;
+        margin: 5px 0;
+    }
+    .last {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .last img {
+        width: 60%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+  */
+    </style>
+</head>
+<body>
+    <div class="markscard">
+        <div class="container1">
+            <div class="header">
+              <h1>Board of Secondary Education</h1> 
+              <h3>ANDRA PRADESH, INDIA</h3> 
+              <H4>SS 266659</H4>
+            </div> 
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="">
+                <img style="margin-left: 30%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCb9oZ-BTlgmxfHBUGQ6OONJRkusl4BBXfA&s" alt="">
+                <img style="margin-left: 35%;" src="https://thumb.ac-illust.com/e4/e4e49518eb7c27a52f2bf39e64c0b358_t.jpeg" alt="">
+            </div> 
+            <div class="a">
+                <h2>SECONDARY SCHOOL CIRTIFICATE</h2>
+                <b>REGULAR   PC/15/14092/0266659/V6</b>
+            </div>   
+        </div>
+        <div class="container2">
+            <div class="info">
+                <p><strong>CIRTIFIED THAT :</strong> VALLABHAPURAM DIVYA</p>
+                <p><strong>FATHER NAME :</strong> VALLABHAPURAM ASHOK</p>
+                <p><strong>MOTHER NAME :</strong> VALLABHAPURAM SUJATHA</p>
+                <p><strong>Bearing Roll No :</strong> 1915123916</p>
+                <p><strong>Belonging To :</strong> Z P HIGH SCHOOL, VALLABHAPURAM, GUNTUR DISTRICT</p>
+                <p><strong>Has appeared and PASSED SSC EXAMINATION held in MARCH 2019 with GPA 9.2</strong></p>
+                <p><strong>and  ENGLISH   as medium of instruction</strong></p>
+              <div class="date">
+                <table>
+                    <tr>
+                        <td style="color: #5b1136;">DATE OF BIRTH</td>
+                        <td>30/09/2004</td>
+                        <td>THREE ZERO</td>
+                        <td>SEPTEMBER</td>
+                        <td>TWO ZERO ZERO FOUR</td>
+                    </tr>
+                </table>
+              </div>
+            </div>
+            <div class="marks">
+               <b>THE CANDIDATE SECURED THE FOLLOWING GRADES AND GRADE POINTS IN CURRICULAR AREA :</b>
+                <table>
+                <tr>
+                   <th rowspan="2">CURRICULAR SUBJECTS</th>
+                   <th colspan="2">GRADE</th>
+                   <th colspan="2">OVERALL GRADE<br>(Internal + External)</th>
+                </tr>
+                <tr>
+                  <th>(Internal)</th>
+                  <th>(External)</th>
+                  <th>Grade</th>
+                  <th>Grade Points</th>
+                </tr>
+                <tr>
+                  <td class="subject">FIRST LANGUAGE : ( TELUGU )</td>
+                  <td>A1</td>
+                  <td>A1</td>
+                  <td>A1</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td class="subject">SECOND LANGUAGE : ( HINDI )</td>
+                  <td>A1</td>
+                  <td>A1</td>
+                  <td>A1</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td class="subject">THIRD LANGUAGE : ENGLISH</td>
+                  <td>A2</td>
+                  <td>A1</td>
+                  <td>A1</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td class="subject">MATHEMATICS</td>
+                  <td>A2</td>
+                  <td>B2</td>
+                  <td>B1</td>
+                  <td>08</td>
+                </tr>
+                <tr>
+                  <td class="subject">GENERAL SCIENCE</td>
+                  <td>A1</td>
+                  <td>B2</td>
+                  <td>B1</td>
+                  <td>08</td>
+                </tr>
+                <tr>
+                  <td class="subject">SOCIAL STUDIES</td>
+                  <td>A1</td>
+                  <td>A2</td>
+                  <td>A2</td>
+                  <td>09</td>
+                </tr>
+                <tr>
+                  <td colspan="5" style="color: #5b1136; font-weight: bold;">GRADE POINTS AVERAGE (GPA): <span class="highlight">9.2</span></td>
+                </tr>
+                </table>
+            </div>
+        </div>
+        <div class="b">
+        <strong>CO-CURRICULAR AREA :</strong>
+        </div>
+        <div class="marks-section">
+            <table>
+            <tr>
+              <th>SUBJECT</th>
+              <th>GRADE</th>
+              <th>SUBJECT</th>
+              <th>GRADE</th>
+            </tr>
+            <tr>
+              <td class="subject">VALUE EDUCATION & LIFE SKILLS</td>
+              <td>A+</td>
+              <td class="subject">WORK & COMPUTER EDUCATION</td>
+              <td>A+</td>
+            </tr>
+            <tr>
+              <td class="subject">ART & CULTURAL EDUCATION</td>
+              <td>A+</td>
+              <td class="subject">HEALTH & PHYSICAL EDUCATION</td>
+              <td>A</td>
+            </tr>
+            </table>
+        </div>    
+        <div class="identification">
+          <b>Marks of Identification:</b><br>
+            <div class="id">
+              1) <span>A MOLE ON THE NECK</span><br>
+              2) <span>A MOLE ON THE LEFT ARM</span>
+            </div>
+        </div>
+        <div class="signs">
+            <div class="sign1">
+              <p>Head of Institution</p>
+               <p>With School Stamp</p>
+              <p>Date of Issue : 14.05.2019</p>
+           </div>
+           <div class="qr">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="">
+           </div>
+           <div class="sign2">
+            <strong>SECRETARY BOARD OF SECONDARY EDUCATION A.P. AMARAVATHI</strong>
+           </div>
+        </div>
+        <div class="last">
+            <div class="footer">
+            <p>1.Any correction in the certificate will not be entertained after one yearfrom the date of issue</p>
+            <p>2.Any tempering or altration in the certificate will result in cancellation of cirtificate   2019</p>
+            
+            </div>
+            <img src="https://img.freepik.com/free-psd/barcode-illustration-isolated_23-2150584094.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+        </div>
+    </div>
+</body>
+</html>

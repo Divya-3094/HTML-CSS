@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+      <style>
+       .parent>h1{
+        color: blue;
+       }
+       .parent>h1+h2{
+        color: crimson;
+       }
+       h2~.child>h2{
+        color: aqua;
+       }
+       .parent>.child>h2+.subchild>h2{
+        color: darkmagenta;
+       }
+       .parent>.child>.child1>h1{
+        color: rgb(26, 242, 26);
+       }
+        
+      </style>
+<body>
+    <div class="parent">
+        <h1>TIGER</h1>
+        <h2>LION</h2>
+        <div class="child">
+            <h2>DONKEY</h2>
+            <div class="subchild">
+                <h2>MONKEY</h2>
+            </div>
+            <div class="child1">
+                <h1>CHIMPANJEE</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

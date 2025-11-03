@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        *{
+            height: 400px;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+        .part{
+            display: flex;
+            height: 300px;
+            width: 300px;
+            background-color: black;
+            border-radius: 20%;
+            margin-top: 250px;
+            margin-left: 600px ;
+
+        }
+        .part>.image img{
+            height: 200px;
+            width: 200px;
+            animation-name: disc;
+            animation-delay: 1s;
+            animation-duration: 0.3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            margin-left: 50px;
+            margin-top: 100px;
+            position: relative;
+        }
+        @keyframes disc{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="part">
+        <div class="image">
+         <img src="https://techterms.com/img/xl/cd_290.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

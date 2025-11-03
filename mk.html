@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secondary School Certificate Marks Memo</title>
+  <style>
+    body {
+      background: #e0e0e0;
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .marks-card {
+      width: 794px; /* A4 width in px at 96dpi */
+      height: 1123px; /* A4 height in px */
+      background: #fff;
+      border: 2px solid #800000;
+      margin: auto;
+      padding: 30px 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #800000;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    .header h2 {
+      margin: 0;
+      color: #800000;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .header h3 {
+      margin: 5px 0;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      width: 70px;
+      height: 70px;
+      border: 1px solid #ccc;
+      background: url('logo.png') center/contain no-repeat;
+    }
+
+    .qr {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      width: 80px;
+      height: 80px;
+      border: 1px solid #ccc;
+      background: url('qrcode.png') center/contain no-repeat;
+    }
+
+    .student-photo {
+      position: absolute;
+      top: 130px;
+      right: 50px;
+      width: 90px;
+      height: 110px;
+      border: 1px solid #000;
+      background: url('student-photo.jpg') center/cover no-repeat;
+    }
+    .student-photo>img{
+      height: 110px;
+      width: 90px;
+    }
+    .info {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .info strong {
+      width: 160px;
+      display: inline-block;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #800000;
+      font-weight: bold;
+      margin: 20px 0 8px 0;
+      text-transform: uppercase;
+      border-bottom: 1px solid #800000;
+      display: inline-block;
+      padding-bottom: 2px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      text-align: center;
+      padding: 8px;
+    }
+
+    th {
+      background: #f5eaea;
+      color: #000;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 80px;
+      left: 40px;
+      right: 40px;
+      font-size: 13px;
+    }
+
+    .footer p {
+      margin: 4px 0;
+    }
+
+    .signatures {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 30px;
+      left: 40px;
+      right: 40px;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .signatures div {
+      width: 45%;
+    }
+
+    @media print {
+      body {
+        background: none;
+        margin: 0;
+      }
+      .marks-card {
+        box-shadow: none;
+        border: 2px solid #800000;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="marks-card">
+    <div class="logo"></div>
+    <div class="qr"></div>
+
+    <div class="header">
+      <h2>Board of Secondary Education</h2>
+      <h3>Government of Andhra Pradesh, India</h3>
+      <h3>Secondary School Certificate Examination - March 2019</h3>
+    </div>
+
+    <div class="student-photo">
+        <img src="https://i.pinimg.com/736x/8c/11/dd/8c11dd4a7110a437722370c4663f80ec.jpg" alt="">
+    </div>
+
+    <div class="info">
+      <p><strong>Certificate No:</strong> SS 266442</p>
+      <p><strong>Student Name:</strong>  Vallabhapuram Divya</p>
+      <p><strong>Father’s Name:</strong> Vallabhapuram Ashok</p>
+      <p><strong>Mother’s Name:</strong> Vallabhapuram Sujatha</p>
+      <p><strong>School Name:</strong> Z.P. High School, Vallabhapuram, Guntur District</p>
+      <p><strong>Roll No:</strong> 1915123916 </p>
+      <p><strong>Medium:</strong> English</p>
+      <p><strong>Date of Birth:</strong> 30-09-2004</p>
+      <p><strong>Result:</strong> Passed</p>
+    </div>
+
+    <div class="section-title">Curricular Subjects</div>
+    <table>
+      <tr>
+        <th>Subject</th>
+        <th>Grade</th>
+        <th>Grade Points</th>
+      </tr>
+      <tr><td>Telugu</td><td>A1</td><td>10</td></tr>
+      <tr><td>Hindi</td><td>A1</td><td>10</td></tr>
+      <tr><td>English</td><td>A1</td><td>10</td></tr>
+      <tr><td>Mathematics</td><td>B1</td><td>08</td></tr>
+      <tr><td>General Science</td><td>B1</td><td>08</td></tr>
+      <tr><td>Social Studies</td><td>A2</td><td>09</td></tr>
+      <tr><th colspan="2">GPA</th><th>9.2</th></tr>
+    </table>
+
+    <div class="section-title">Co-Curricular Areas</div>
+    <table>
+      <tr><th>Area</th><th>Grade</th></tr>
+      <tr><td>Value Education & Life Skills</td><td>A+</td></tr>
+      <tr><td>Art & Cultural Education</td><td>A+</td></tr>
+      <tr><td>Work & Computer Education</td><td>A+</td></tr>
+      <tr><td>Health & Physical Education</td><td>A+</td></tr>
+    </table>
+
+    <div class="footer">
+      <p><strong>Identification Marks:</strong></p>
+      <p>1) A mole on the left hand wrist</p>
+      <p>2) A mole on the abdomen</p>
+    </div>
+
+    <div class="signatures">
+      <div>
+        <p>Head Master</p>
+        <p><strong>Z.P. High School, Vallabhapuram</strong></p>
+      </div>
+      <div>
+        <p>Secretary</p>
+        <p><strong>Board of Secondary Education, A.P.</strong></p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marks Card</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    margin: 20px;
+  }
+
+  .marks-card {
+    border: 2px solid #ccc;
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+    background: #fdfdf5;
+  }
+
+  h2 {
+    text-align: center;
+    color: #2f4f4f;
+    margin-bottom: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  th, td {
+    border: 1px solid #999;
+    padding: 6px 10px;
+    text-align: center;
+  }
+
+  th {
+    background: #cbe0c2;
+    font-weight: bold;
+  }
+
+  td.subject {
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .footer {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  .highlight {
+    background: #e7f1e4;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <div class="marks-card">
+    <h2>CURRICULAR SUBJECTS</h2>
+    <table>
+      <tr>
+        <th rowspan="2">CURRICULAR SUBJECTS</th>
+        <th colspan="2">GRADE</th>
+        <th colspan="2">OVERALL GRADE<br>(Internal + External)</th>
+      </tr>
+      <tr>
+        <th>(Internal)</th>
+        <th>(External)</th>
+        <th>Grade</th>
+        <th>Grade Points</th>
+      </tr>
+      <tr>
+        <td class="subject">FIRST LANGUAGE : ( TELUGU )</td>
+        <td>A1</td>
+        <td>A1</td>
+        <td>A1</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td class="subject">SECOND LANGUAGE : ( HINDI )</td>
+        <td>A1</td>
+        <td>A1</td>
+        <td>A1</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td class="subject">THIRD LANGUAGE : ENGLISH</td>
+        <td>A2</td>
+        <td>A1</td>
+        <td>A1</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td class="subject">MATHEMATICS</td>
+        <td>A2</td>
+        <td>B2</td>
+        <td>B1</td>
+        <td>08</td>
+      </tr>
+      <tr>
+        <td class="subject">GENERAL SCIENCE</td>
+        <td>A1</td>
+        <td>B2</td>
+        <td>B1</td>
+        <td>08</td>
+      </tr>
+      <tr>
+        <td class="subject">SOCIAL STUDIES</td>
+        <td>A1</td>
+        <td>A2</td>
+        <td>A2</td>
+        <td>09</td>
+      </tr>
+    </table>
+
+    <div class="footer">
+      GRADE POINTS AVERAGE (GPA): <span class="highlight">9.2</span>
+    </div>
+  </div>
+</body>
+</html>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Co-Curricular Grades</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    margin: 20px;
+  }
+
+  .marks-section {
+    border: 2px solid #ccc;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+    background: #fdfdf5;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  th, td {
+    border: 1px solid #999;
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  th {
+    background: #f1d9d9;
+    font-weight: bold;
+  }
+
+  td.subject {
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .identification {
+    margin-top: 10px;
+    border: 1px solid #999;
+    background: #e8f0e0;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .identification b {
+    font-weight: bold;
+  }
+
+  .marks {
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="marks-section">
+    <table>
+      <tr>
+        <th>SUBJECT</th>
+        <th>GRADE</th>
+        <th>SUBJECT</th>
+        <th>GRADE</th>
+      </tr>
+      <tr>
+        <td class="subject">VALUE EDUCATION & LIFE SKILLS</td>
+        <td>A+</td>
+        <td class="subject">WORK & COMPUTER EDUCATION</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td class="subject">ART & CULTURAL EDUCATION</td>
+        <td>A+</td>
+        <td class="subject">HEALTH & PHYSICAL EDUCATION</td>
+        <td>A</td>
+      </tr>
+    </table>
+
+    <div class="identification">
+      <b>Marks of Identification:</b><br>
+      1) <span class="marks">A MOLE ON THE NECK</span><br>
+      2) <span class="marks">A MOLE ON THE LEFT ARM</span>
+    </div>
+  </div>
+</body>
+</html>
